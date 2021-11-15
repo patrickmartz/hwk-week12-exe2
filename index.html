@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Converter</title>
+</head>
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+h1 {
+    font-family: 'Lobster', cursive;
+    font: 45px;
+    text-align: left;
+    color: white;
+}
+    body{
+        background: linear-gradient(to right, darkblue 0%, yellow 100%);
+        color: white;
+    }
+
+    .tableclass {
+        border: solid white 5px;
+    }
+
+    img{
+        width: 350px;
+        height: auto;
+    }
+
+    a:link, a:visited{
+        font-weight: bold;
+        text-decoration: none;
+        color: white;
+    }
+
+</style>
+<body>
+    
+
+    <table class="tableclass">
+    <tr>
+    <td>
+        <h1>Temperature Converter</h1>
+
+        <div><strong>Calculate farenheit to celcius: ex. (68F-32) x 5/9=20C</strong></div>
+        <div><strong>Calculate celcius to farenheit: ex. (20C*1.8) + 32=68F</strong></div>
+        <P></P>
+
+    <form name="theform">
+    
+    <table>
+        <tr>
+            <td rowspan="9"><img src="pic.jpg" alt="picture of a letter grade"></td>
+            <td style="float: right"><strong>Enter Temperature value in farenheit:</strong></td>
+            <td><input name="farinheitFmInput" size="10"></td>
+        </tr>
+        <tr>
+            <td style="float: right"><strong>Celcius:</strong></td>
+            <td><input name="celciusFmInput" size="10"></td>
+        </tr>
+        
+        
+        <tr>
+            <td>
+                <input type="button" name="calc" value="calculate" onclick="calculate();">
+                <input type="button" name="clear" value="clear" onclick="clearinfo();">
+            </td>
+        </tr>
+        <tr>
+            <td style="float: right"><strong>Enter Temperature value in celcius:</strong></td>
+            <td><input name="celciusFmInput" size="10"></td>
+        </tr>
+        <tr>
+            <td style="float: right"><strong>Farenheit:</strong></td>
+            <td><input name="farenheitFmInput" size="10"></td>
+        </tr>
+        <tr>
+            <td>
+                <input type="button" name="calc" value="calculate" onclick="calculate();">
+                <input type="button" name="clear" value="clear" onclick="clearinfo();">
+            </td>
+        </tr>
+
+    </table>
+    </form>
+
+    </td>
+    </tr>
+    </table>
+
+    <script>
+        document.theform.farenheitFmInput.focus();
+
+        function calculate(){
+            //declare constants and the variables
+            const farenheit = .15;
+            const celcius = .30;
+                        
+            var farenheit;
+            var celcius;
+            
+
+            // get values from the text fields
+            farenheit = parseFloat(document.theform.practiceFmInput.value);
+            celcius = parseFloat(document.theform.homeworkFmInput.value);
+            
+
+             }
+
+
+
+    </script>
+    
+    <p></p>
+
+<a href="http://csnet.southtexascollege.edu/localuser/pmartinez_6381/">Go Back To Homepage</a><br>
+<strong>Patricio Martinez Jr</strong>
+</body>
+</html>
